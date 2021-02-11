@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Flutterwave Signup page</title>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- nav -->
+        <div class="header-logo">
+            <img src="signup-image/Flutterwave Logo (1).svg" alt="" width="180px" height="30px">
+        </div>
+        <!-- header -->
+        <div class="signup-text">
+            <h1>Let's get you started with your Flutterwave account</h1>
+        </div>
+
+        <!-- form inputs -->
+        <div class="signup-form">
+            <form action="home.html" method="GET" id="form">
+
+                <!-- name field -->
+                <div class="input-fields">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="Full name" id="fullname" placeholder="firstname lastname" required>
+                </div>
+
+                <!-- trading name -->
+                <div class="input-fields">
+                    <label for="trading-name">Trading name</label> 
+                    <input type="text" id="trading-name" name="Trading name" required> 
+                </div>
+
+                <!-- email field -->
+                <div class="input-fields">
+                    <label for="email">Email address</label> 
+                    <input type="email" name="Email" id="email" placeholder="aduntola@flutterwave.com" required> 
+                    <span class="error-text"></span>
+                </div>
+
+                <div class="input-fields">
+                    <label for="country">What country is your business based</label> 
+                    <select name="country" id="country" name="Country">
+                        <option value="ghana">Ghana</option>
+                        <option value="cameroon">Cameroon</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="south-africa">South Africa</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="tanzania">Tanzania</option>
+                        <option value="congo">Congo</option>
+                        <option value="ivory-coast">Ivory coast</option>
+                    </select> 
+                  
+                </div>
+
+                <div class="input-fields">
+                    <label for="sources">How did you hear about Flutterwave? </label> 
+                <select name="sources" id="sources">
+                    <option value="ghana">From a friend</option>
+                    <option value="cameroon">On social media</option>
+                    <option value="nigeria">Via a webinar</option>
+                    <option value="south-africa">From a blog post</option>
+                    <option value="kenya">From google search</option>
+                    <option value="tanzania">On the news</option>
+                </select> 
+               
+                </div>
+
+                <!-- referral code -->
+                <div class="input-fields">
+                    <label for="code">Got a referral code? (optional)</label> 
+                    <input type="text" name="Referral code" id="code" placeholder="Enter referral code" required> 
+                </div>
+
+                <!-- password field -->
+                <div class="password-field">
+                <label for="password">Choose a password</label> 
+                <input type="password" name="Password" id="password"  placeholder="please enter your password" required>  
+                    <span class="hide-btn"><i class="fas fa-eye-slash secret"></i></span>
+                    <span class="show-btn hidden"><i class="fas fa-eye "></i></span>
+                    
+                    <div class="divspan">
+                        <div class="strengths pass-strength1"></div>
+                        <div class="strengths pass-strength2"></div>
+                        <div class="strengths pass-strength3"></div>
+                        <div class="strengths pass-strength4"></div>
+                        <div class="strengths pass-strength5"></div>
+                    </div>
+                    
+                <!-- password strength text div -->
+                <p id="error-text"></p>
+
+                </div>
+               
+                <button class="btn" type="submit">Get started</button>
+            </form>
+
+           <!-- terms and agreement session -->
+            <div class="policy">
+                <p>
+                    <i class="far fa-square"></i>
+                    <i class="fas fa-check hide-check"></i>
+                     I acknowledge that I have read and do hereby accept the terms and conditions in the Flutterwave's
+                      <a href="https://flutterwave.com/ng/terms?_ga=2.1467249.1384086301.1609879319-1684331656.1587752687">Terms of Use</a>, 
+                      <a href="https://flutterwave.com/ng/merchant-service-agreement?_ga=2.268263630.1384086301.1609879319-1684331656.1587752687">Merchant Agreement</a>
+                       and <a href="https://flutterwave.com/ng/privacy-policy?_ga=2.268263630.1384086301.1609879319-1684331656.1587752687">Privacy Policy</a>
+                    </p>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+    <footer class="container" id="footer">
+        <p>Already have an account? <a href="login.html" class="login">Login</a></p>
+    </footer>
+
+
+<script src="signup.js"></script>
+    
+</body>
+</html>
