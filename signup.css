@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;800&family=Roboto:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f6f8;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #1f6cc4;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  position: relative;
+}
+
+.header-logo {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.signup-text {
+  max-width: 500px;
+}
+.signup-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-right: 6rem;
+}
+
+/* input and select */
+input,
+select {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #c4cdd5;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+input {
+  opacity: 0.7;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid rgb(72, 72, 160);
+}
+
+.password-field {
+  position: relative;
+}
+
+/* password reveal/hide icon */
+.show-btn,
+.hide-btn {
+  position: relative;
+  top: -55px;
+  left: 90%;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* parent div of  password indicator default line*/
+.divspan {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  position: relative;
+  max-width: 100%;
+  padding-top: 1rem;
+}
+
+.divspan::before {
+  content: '';
+  background: #ffffff;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  transform: translateY(-100%);
+  top: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+/* password indicator default line */
+.pass-strength1,
+.pass-strength2,
+.pass-strength3,
+.pass-strength4,
+.pass-strength5 {
+  height: 4px;
+  width: 20%;
+  background-color: #dddddd;
+  margin-right: 8px;
+  position: relative;
+}
+
+.divspan .pass-strength3 {
+  width: 35%;
+}
+
+.divspan .pass-strength5 {
+  margin-right: 0;
+}
+
+/* classes for password strength indicator to be called in Js */
+.weak {
+  background-color: red;
+}
+
+.fair {
+  background-color: rgb(231, 183, 49);
+}
+
+.great {
+  background-color: rgb(15, 201, 15);
+}
+
+.perfect {
+  background-color: rgb(17, 138, 14);
+}
+/* ends here */
+
+.btn {
+  background-color: #f5a623;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  animation-name: button-anime;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+/* animation for hover button */
+@keyframes button-anime {
+  100% {
+    background-color: #c88009;
+    color: #000;
+  }
+}
+
+.policy {
+  position: relative;
+}
+
+.fa-square {
+  color: #f5a623;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.fa-check {
+  color: #f5a623;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.4rem;
+}
+
+.hide-check {
+  visibility: hidden;
+}
+
+.login {
+  font-weight: 600;
+}
+
+#footer {
+  padding-top: 0;
+}
+
+/* media query for responsiveness */
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  .signup-text h1 {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+}
