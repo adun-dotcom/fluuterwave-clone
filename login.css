@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;800&family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  background-color: #f4f6f8;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 80px;
+}
+
+.flutter-img {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.flutter-img p {
+  padding-top: 5rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #508bcf;
+}
+
+.login-details {
+  position: relative;
+}
+
+/* form input styles */
+form {
+  opacity: 0.8;
+}
+
+.login-details input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid #777d83;
+}
+
+.login-details input:focus {
+  border: 1px solid #4a47d4;
+}
+
+/* password eye icon */
+.hide-btn,
+.show-btn {
+  position: absolute;
+  display: block;
+  top: 38%;
+  right: 3%;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* button style */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #f5a623;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.btn:hover {
+  background-color: #c88009;
+}
+
+.login-details p {
+  text-align: center;
+}
+
+/* media query for responsiveness */
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px 20px;
+  }
+}
