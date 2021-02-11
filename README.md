@@ -1,1 +1,1 @@
-# fluuterwave-clone
+# flutterwave-project-clone

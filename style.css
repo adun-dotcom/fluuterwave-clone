@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #dadef7 !important;
+  font-size: 1.8rem !important;
+  font-family: 'Poppins', sans-serif !important;
+  padding: 2rem 10rem;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* navbar style */
+.navbar .navbar-brand img {
+  margin-right: 4rem;
+}
+
+.nav-item {
+  margin-left: 4rem;
+  word-wrap: none;
+}
+
+.navbar-toggler-icon .fa-bars {
+  font-size: 2rem;
+}
+
+.nav-item .nav-link {
+  color: #4f4f4f !important;
+}
+
+.nav-item .nav-link:hover {
+  transition-delay: 0.2s;
+  color: #e9a73c !important;
+}
+
+/* dropdown menu style */
+.navbar .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding-top: 0 !important;
+  margin-left: -150px !important;
+}
+
+.dropdown-menu .card-text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  padding-bottom: 2rem;
+}
+
+.dropdown-card {
+  min-width: 700px;
+  height: 400px;
+}
+
+.dropdown-card .card {
+  border: none;
+  padding: 3rem 2rem;
+}
+
+.dropdown-card .card a {
+  color: #2d9cdb;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.smaller-menu {
+  min-width: 250px !important ;
+  background-color: red;
+}
+
+.card-title {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.bigger-menu {
+  min-width: 400px !important;
+  background-color: #f0f2fa !important;
+}
+
+/* buttons style */
+.btn {
+  font-size: 1.5rem !important;
+  padding: 1rem 2.2rem !important;
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  box-shadow: 0px 3px 2px rgb(197, 195, 195);
+}
+
+.btn-white {
+  background-color: #fff !important;
+}
+.btn-yellow {
+  background-color: #f5a623 !important;
+  color: #fff !important;
+}
+
+.btn-yellow:hover {
+  background-color: #c98c2a !important;
+}
+
+/* content style */
+#home-text {
+  padding: 8rem 0;
+  max-width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.about-text,
+.about-img {
+  margin-right: 0;
+}
+
+/* left content style */
+.about-text {
+  max-height: 500px;
+  padding-top: 5rem;
+}
+.about-text h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #111d73;
+  padding-bottom: 3rem;
+}
+
+.about-text p {
+  font-size: 2.7rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.about-btn {
+  padding: 1.5rem 3rem !important;
+  font-weight: 600 !important;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.about-btn:hover {
+  transform: translateY(-5%);
+}
+
+.about-btn #btn-text {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.about-btn:hover #btn-text {
+  animation-name: btn-span;
+  animation-duration: 0.3s;
+}
+
+@keyframes btn-span {
+  0% {
+    transform: translateY(-20%);
+  }
+}
+
+.about-btn span {
+  padding-left: 2rem;
+}
+
+/* right content style */
+
+.about-img {
+  padding: 0 !important;
+}
+
+.about-img .card-group {
+  min-width: 800px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-img img {
+  margin-bottom: 3rem;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1300px) {
+  .about-img .card-group {
+    max-width: 100% !important;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 990px) {
+  body {
+    padding: 30px 10px;
+  }
+
+  .container-fluid {
+    min-width: 100% !important;
+  }
+
+  #home-text {
+    padding: 0 !important;
+    max-width: 100%;
+    display: block !important;
+  }
+
+  .about-text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #111d73;
+    padding-bottom: 1rem;
+  }
+
+  .about-text p {
+    font-size: 2rem;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+
+  .about-btn {
+    width: 200px !important;
+    padding: 1rem !important;
+    font-weight: 600 !important;
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
+
+  .about-btn span {
+    padding-left: 1rem;
+  }
+
+  /* right content */
+
+  .about-img .card-group {
+    width: 100% !important;
+    justify-content: flex-start;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .about-img img {
+    max-width: 250px !important;
+  }
+}
